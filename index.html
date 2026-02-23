@@ -1,1015 +1,299 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>News HTML-5 Template </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<meta charset="utf-8">
+	<title>Magazine and News</title>
+	<meta name="description" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/ticker-style.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Normalize/Reset CSS-->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="css/main.css">
+
 </head>
 
-<body>
+<body id="welcome">
 
-    <!-- Preloader Start -->
-    <!-- <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Preloader Start -->
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<h1>Magazine and News</h1>
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li class="current"><a href="#welcome">Welcome</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#tmpl-structure">Structure</a></li>
+				<li><a href="#css-structure">CSS Files</a></li>
+				<li><a href="#javascript">JavaScript Libraries</a></li>
+				<li><a href="#contact-form">Contact Form</a></li>
+				<li><a href="#subscription-form">Subscription Form</a></li>
+				<li><a href="#video">Video Tutorial</a></li>
+				<li><a href="#credit">Source and Credit</a></li>
+			</ul>
+		</nav>
+	</aside>
 
-    <header>
-        <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top black-bg d-none d-md-block">
-                    <div class="container">
-                        <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="header-info-left">
-                                    <ul>
-                                        <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                                        <li><img src="assets/img/icon/header_icon1.png" alt="">Monday, 2nd February
-                                            2026</li>
-                                    </ul>
-                                </div>
-                                <div class="header-info-right">
-                                    <ul class="header-social">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-mid d-none d-md-block">
-                    <div class="container">
-                        <div class="row d-flex align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-3 col-lg-3 col-md-3">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                <div class="header-banner f-right ">
-                                    <img src="assets/img/hero/header_card.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom header-sticky">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
-                                <!-- sticky -->
-                                <div class="sticky-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-md-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="categori.html">Songlist</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="latest_news.html">Latest News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="details.html">Categori Details</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-2 col-md-4">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <i class="fas fa-search special-tag"></i>
-                                    <div class="search-box">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search">
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>Magazine and News</h1>
+				</div>
+				<div class="welcome">
+					<h2 class="twenty">Welcome To Magazine and News</h2>
 
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-md-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
+					<p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
 
-    <main>
-        <!-- Trending Area Start -->
-        <div class="trending-area fix">
-            <div class="container">
-                <div class="trending-main">
-                    <!-- Trending Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="trending-tittle">
-                                <strong>Trending now</strong>
-                                <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <div class="trending-animated">
-                                    <ul id="js-news" class="js-hidden">
-                                        <li class="news-item">American singer-songwriter known for her cinematic,
-                                            melancholic style
-                                            and explorations of tragic romance, glamour, and 1950s–1960s Americana.</li>
-                                        <li class="news-item">Rising to fame in
-                                            2011 with "Video Games,"</li>
-                                        <li class="news-item">she has become one of the most influential pop artists of
-                                            the 21st
-                                            century.</li>
-                                    </ul>
-                                </div>
+					<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document. Thank you so much!</p>
+				</div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <!-- Trending Top -->
-                            <div class="trending-top mb-30">
-                                <div class="trend-top-img">
-                                    <img src="assets/img/offers/lanadr bg hd.jpg" alt="">
-                                    <div class="trend-top-cap">
+				<div class="features">
+					<h2 class="twenty">Template Features</h2>
 
-                                        <h2><a href="details.html">Famous singer makes another appearance<br> Lana Del
-                                                Rey</a></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Trending Bottom -->
-                            <div class="trending-bottom">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <img src="assets/img/offers/ldr img.jpg" alt="" width="300px" height="250px">
-                                            </div>
-                                            <div class="trend-bottom-cap">
+					<ul>
+						<li>Clean &amp; Simple Design</li>
+						<li>HTML5 &amp; CSS3</li>
+						<li>Fully Responsive Design</li>
+						<li>PHP/Ajax Powered Working Contact Form</li>
+						<li>All files are well commented</li>
+						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
+						<li>Extensive Documentation</li>
+					</ul>
+				</div>
 
-                                                <h4><a href="details2.html">Young & Beautiful</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <img src="assets/img/offers/ldr summert.jpg" alt="" width="300px" height="250px">
-                                            </div>
-                                            <div class="trend-bottom-cap">
+			</section>
 
-                                                <h4>
-                                                    <h4><a href="details1.html">Summertime Sadness</a></h4>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <img src="assets/img/offers/born to die.jpg" alt="" width="300px" height="250px">
-                                            </div>
-                                            <div class="trend-bottom-cap">
+			<section id="installation">
+				<div class="content-header">
+					<h1>Magazine and News</h1>
+				</div>
+				<h2 class="title">Installing Template.</h2>
 
-                                                <h4><a href="details3.html">Born To Die</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Riht content -->
-                        <div class="col-lg-4">
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <img src="assets/img/offers/ldr young n beau.jpg" alt="" width="300px" height="200px">
-                                </div>
-                                <div class="trand-right-cap">
+				<div class="section-content">
+					<ol>
+						<li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+						<li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May not wotrk fonts and google map).</li>
+						<li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment for send messages.</li>
+						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
+						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+					</ol>
+				</div>
 
-                                    <h4><a href="details4.html">Lana Del Rey Kembali Jadi Sorotan, Ini yang Bikin Fans
-                                            Terpikat</a></h4>
-                                </div>
-                            </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <img src="assets/img/offers/ldr imgg.jpg" alt="" width="300px" height="200px">
-                                </div>
-                                <div class="trand-right-cap">
-
-                                    <h4><a href="details5.html">Lana Del Rey Buktikan Dirinya Tetap Ikonik di Tengah
-                                            Tren Musik Baru</a></h4>
-                                </div>
-                            </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <img src="assets/img/offers/ldr immg.jpg" alt="" width="300px" height="200px">
-                                </div>
-                                <div class="trand-right-cap">
-
-                                    <h4><a href="details7.html">Lana Del Rey dan Romantisme Gelap yang Selalu Menghantui
-                                            Panggung Musik</a></h4>
-                                </div>
-                            </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <img src="assets/img/offers/lddr img.jpg" alt="" width="300px" height="200px">
-                                </div>
-                                <div class="trand-right-cap">
-
-                                    <h4><a href="details6.html">Di Balik Suara Sendu, Lana Del Rey Menulis Kisah Patah
-                                            Hati</a></h4>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Trending Area End -->
-        <!--   Weekly-News start -->
-        <div class="weekly-news-area pt-50">
-            <div class="container">
-                <div class="weekly-wrapper">
-                    <!-- section Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-30">
-                                <h3>Weekly Top News</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="weekly-news-active dot-style d-flex dot-style">
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/offers/ldr20.jpg" alt="" width="300px" height="230px">
-                                    </div>
-                                    <div class="weekly-caption">
-
-                                        <h4><a href="#">Lana Del Rey Kembali, Aura Ikoniknya Tak Pernah Pudar</a></h4>
-                                    </div>
-                                </div>
-                                <div class="weekly-single active">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/offers/ldrbaruu.jpg" alt="" width="300px" height="230px">
-                                    </div>
-                                    <div class="weekly-caption">
-
-                                        <h4><a href="#">Mengapa Lana Del Rey Selalu Berbeda?</a></h4>
-                                    </div>
-                                </div>
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/offers/ldr19.jpg" alt="" width="300px" height="230px">
-                                    </div>
-                                    <div class="weekly-caption">
-
-                                        <h4><a href="#">Lana Del Rey Kembali Merangkai Luka Menjadi Karya</a></h4>
-                                    </div>
-                                </div>
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/offers/ldrbaru3.jpg" alt="" width="300px" height="230px">
-                                    </div>
-                                    <div class="weekly-caption">
-
-                                        <h4><a href="#">Lana Del Rey, Simfoni Kesedihan yang Tak Pernah Kehilangan
-                                                Pesona</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Weekly-News -->
-        <!-- Whats New Start -->
-        <section class="whats-news-area pt-50 pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row d-flex justify-content-between">
-                            <div class="col-lg-3 col-md-3">
-                                <div class="section-tittle mb-30">
-                                    <h3>Whats New</h3>
-                                </div>
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                                <div class="properties__button">
-                                    <!--Nav Button  -->
-                                    <nav>
-                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                                href="#nav-home" role="tab" aria-controls="nav-home"
-                                                aria-selected="true">All</a>
-                                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                                                href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                                aria-selected="false">Lifestyle</a>
-                                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                                                href="#nav-contact" role="tab" aria-controls="nav-contact"
-                                                aria-selected="false">Icon</a>
-                                            <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab"
-                                                href="#nav-last" role="tab" aria-controls="nav-contact"
-                                                aria-selected="false">Influence</a>
-
-                                        </div>
-                                    </nav>
-                                    <!--End Nav Button  -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <!-- Nav Card -->
-                                <div class="tab-content" id="nav-tabContent">
-                                    <!-- card one -->
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                        aria-labelledby="nav-home-tab">
-                                        <div class="whats-news-caption">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba22.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Continues to Shape Modern Music
-                                                                    With Poetic Storytelling</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba4.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Remains a Defining Voice of a
-                                                                    Generation</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba5.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Redefines Artistry in Modern
-                                                                    Pop Music</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba6.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Inside Lana Del Rey’s Lasting Impact on
-                                                                    Music and Culture</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Card two -->
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                        aria-labelledby="nav-profile-tab">
-                                        <div class="whats-news-caption">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba7.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Dominates Headlines as Fans
-                                                                    Celebrate Her Ongoing Musical Era</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba8.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Continues to Draw Global
-                                                                    Attention With Her Latest Work</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba9.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Why Lana Del Rey’s Music Still Resonates in
-                                                                    a Changing Pop Landscape</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba10.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">The Evolution of Lana Del Rey: Art,
-                                                                    Identity, and Influence</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Card three -->
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                        aria-labelledby="nav-contact-tab">
-                                        <div class="whats-news-caption">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba11.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">How Lana Del Rey Became One of the Most
-                                                                    Influential Artists of Her Generation</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba12.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey’s Enduring Legacy in Music and
-                                                                    Modern Culture</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr ba13.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Proves Longevity Is the New Pop
-                                                                    Revolution</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr14.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey and the Art of Turning Emotion
-                                                                    Into Music</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- card fure -->
-                                    <div class="tab-pane fade" id="nav-last" role="tabpanel"
-                                        aria-labelledby="nav-last-tab">
-                                        <div class="whats-news-caption">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr15.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey’s Cinematic Sound Continues to
-                                                                    Captivate Millions</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr16.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Remains at the Center of Music
-                                                                    Conversations Worldwide</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/ldr18.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey’s Influence Continues to Shape
-                                                                    Today’s Music Industry</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <div class="single-what-news mb-100">
-                                                        <div class="what-img">
-                                                            <img src="assets/img/offers/lddr17.jpg" alt="" width="300px" height="250px">
-                                                        </div>
-                                                        <div class="what-cap">
-
-                                                            <h4><a href="#">Lana Del Rey Stays Relevant as Her Art
-                                                                    Evolves</a>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+			</section>
 
 
-                                </div>
-                                <!-- End Nav Card -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-40">
-                            <h3>Follow Us</h3>
-                        </div>
-                        <!-- Flow Socail -->
-                        <div class="single-follow mb-45">
-                            <div class="single-box">
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-fb.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-tw.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-ins.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                                <div class="follow-us d-flex align-items-center">
-                                    <div class="follow-social">
-                                        <a href="#"><img src="assets/img/news/icon-yo.png" alt=""></a>
-                                    </div>
-                                    <div class="follow-count">
-                                        <span>8,045</span>
-                                        <p>Fans</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- New Poster -->
-                        <div class="news-poster d-none d-lg-block">
-                            <img src="assets/img/news/news_card.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Whats New End -->
+			<section id="tmpl-structure">
+				<h2 class="title">Template Structure</h2>
+				<p class="fifteen">All information within the main content area is nested within a body tag. The general template structure is pretty the same throughout the template. Here is the general structure of main page (index.html).</p>
+				<pre class="brush: html">
+					<header class="header_area">
 
-        <!-- End Weekly-News -->
-        <!-- Start Youtube -->
-        <div class="youtube-area video-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="video-items-active">
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/CicQIuG8hBo" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/rIz00N40bag" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/CONfhrASy44" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+					</header>
 
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/lq6fL2ROWf8" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+					<main class="site-main">
+						<section class="section">
 
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/0VxlQlacWV4" frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-info">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="video-caption">
-                                <div class="top-caption">
+						</section>
+						<section class="section">
 
-                                </div>
-                                <div class="bottom-caption">
-                                    <h2>Welcome To The Best artist performances At Artists of the year</h2>
-                                    <p>Lana Del Rey’s performances are known for their haunting atmosphere, emotional
-                                        depth, and cinematic beauty, offering audiences an experience that feels both
-                                        intimate and grand. On stage, she delivers her songs with a soft yet commanding
-                                        presence, allowing her expressive vocals and poetic lyrics to take center stage
-                                        while lush visuals, vintage-inspired aesthetics, and carefully curated lighting
-                                        enhance the mood. Rather than relying on high-energy choreography, Lana Del Rey
-                                        connects with fans through emotion, storytelling, and vulnerability, often
-                                        creating moments of quiet intensity that resonate long after the show ends. Her
-                                        live performances reflect the same authenticity found in her music, blending
-                                        nostalgia, romance, and melancholy into a dreamlike experience that has become a
-                                        signature of her concerts worldwide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="testmonial-nav text-center">
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/watch?v=o_1aF54DO60" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>Lana Del Rey: A Night of Dreams</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/watch?v=MiAoetOXKcY" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>Ethereal Nights with Lana Del Rey</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/watch?v=TdrL3QxjyVw" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>Lana Del Rey Live: Haunting the Stage</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/watch?v=muWEOXE5zeQ" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>Moments That Define Lana Del Rey</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/watch?v=Bag1gUxuU0g" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>Lana Del Rey: Emotions in Motion</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Start youtube -->
-        <!--  Recent Articles start -->
-        <div class="recent-articles">
-            <div class="container">
-                <div class="recent-wrapper">
-                    <!-- section Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-30">
-                                <h3>Recent Articles</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="recent-active dot-style d-flex dot-style">
-                                <div class="single-recent mb-100">
-                                    <div class="what-img">
-                                        <img src="assets/img/offers/ldr22.jpg" alt="" width="230px" height="250px">
-                                    </div>
-                                    <div class="what-cap">
+						</section>
+						<section class="section">
 
-                                        <h4><a href="#">Lana Del Rey’s Era Is Far From Over</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100">
-                                    <div class="what-img">
-                                        <img src="assets/img/offers/ldrrd.jpg" alt="" width="230px" height="250px">
-                                    </div>
-                                    <div class="what-cap">
+						</section>
+					</main>
 
-                                        <h4><a href="#">Lana Del Rey’s Career Highlights and Cultural Impact</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100">
-                                    <div class="what-img">
-                                        <img src="assets/img/offers/ldrr.jpg" alt="" width="230px" height="250px">
-                                    </div>
-                                    <div class="what-cap">
+					<footer class="footer">
 
-                                        <h4><a href="#">The World Can’t Look Away From Lana Del Rey</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100">
-                                    <div class="what-img">
-                                        <img src="assets/img/offers/ldr21.jpg" alt="" width="230px" height="250px">
-                                    </div>
-                                    <div class="what-cap">
+					</footer>
+				</pre>
+			</section>
 
-                                        <h4><a href="#">Lana Del Rey Still Sets the Mood for Modern Pop</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Recent Articles End -->
-        <!--Start pagination -->
-        <div class="pagination-area pb-45 text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="single-wrap d-flex justify-content-center">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-start">
-                                    <li class="page-item"><a class="page-link" href="#"><span
-                                                class="flaticon-arrow roted"></span></a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                    <li class="page-item"><a class="page-link" href="#"><span
-                                                class="flaticon-arrow right-arrow"></span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End pagination  -->
-    </main>
 
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding fix">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
-                        <div class="single-footer-caption">
-                            <div class="single-footer-caption">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>At NewsWeb, we are committed to bringing you timely, accurate, and meaningful
-                                            stories from around the world. We believe informed readers make stronger
-                                            communities, and that every headline deserves clarity and context. Thank you
-                                            for trusting NewsWeb as your source for news—stay curious, stay informed,
-                                            and check back daily as the story continues.</p>
-                                    </div>
-                                </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6">
-                        <div class="single-footer-caption mt-60">
-                            <div class="footer-tittle">
-                                <h4>Newsletter</h4>
-                                <p>Heaven fruitful doesn't over les idays appear creeping</p>
-                                <!-- Form -->
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank"
-                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                            method="get" class="subscribe_form relative mail_part">
-                                            <input type="email" name="email" id="newsletter-form-email"
-                                                placeholder="Email Address" class="placeholder hide-on-focus"
-                                                onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = ' Email Address '">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit"
-                                                    class="email_icon newsletter-submit button-contactForm"><img
-                                                        src="assets/img/logo/form-iocn.png" alt=""></button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50 mt-60">
-                            <div class="footer-tittle">
-                                <h4>Instagram Feed</h4>
-                            </div>
-                            <div class="instagram-gellay">
-                                <ul class="insta-feed">
-                                    <li><a href="#"><img src="assets/img/offers/lanadr bg hd.jpg" alt="" width="50px" height="80px"></a>
-                                    </li>
-                                    <li><a href="#"><img src="assets/img/offers/lddr img.jpg" alt="" width="50px" height="80px"></a></li>
-                                    <li><a href="#"><img src="assets/img/offers/ldr img.jpg" alt="" width="50px" height="80px"></a></li>
-                                    <li><a href="#"><img src="assets/img/offers/ldr imgg.jpg" alt="" width="50px" height="80px"></a></li>
-                                    <li><a href="#"><img src="assets/img/offers/ldr immg.jpg" alt="" width="50px" height="80px"></a></li>
-                                    <li><a href="#"><img src="assets/img/offers/ldr summert.jpg" alt="" width="50px" height="80px"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer-bottom aera -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-lg-6">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                    This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com" target="_blank">Colorlib</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="footer-menu f-right">
-                                <ul>
-                                    <li><a href="#">Terms of use</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
+			<section id="css-structure">
+				<h2 class="title">CSS Files and Structure</h2>
+				<p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+				<pre class="brush: html">
+		            <!--
+                    CSS
+                    ============================================= -->
+					<!-- CSS here -->
+					<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+					<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+					<link rel="stylesheet" href="assets/css/ticker-style.css">
+					<link rel="stylesheet" href="assets/css/flaticon.css">
+					<link rel="stylesheet" href="assets/css/slicknav.css">
+					<link rel="stylesheet" href="assets/css/animate.min.css">
+					<link rel="stylesheet" href="assets/css/magnific-popup.css">
+					<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+					<link rel="stylesheet" href="assets/css/themify-icons.css">
+					<link rel="stylesheet" href="assets/css/slick.css">
+					<link rel="stylesheet" href="assets/css/nice-select.css">
+					<link rel="stylesheet" href="assets/css/style.css">
+					
+                </pre>
 
-    <!-- JS here -->
+                <h2 class="title">Google Web Fonts</h2>
 
-    <!-- All JS Custom Plugins Link Here here -->
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
+                <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
 
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <!-- Date Picker -->
-    <script src="./assets/js/gijgo.min.js"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/animated.headline.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
+                <pre class="brush:html">		                
+						<!--
+						Google Font
+						=========================== -->
+						<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"> 
+					</pre>
 
-    <!-- Breaking New Pluging -->
-    <script src="./assets/js/jquery.ticker.js"></script>
-    <script src="./assets/js/site.js"></script>
+					<p class="twenty">Remember to change the font into <strong>style.css</strong></p>
+				</section>
 
-    <!-- Scrollup, nice-select, sticky -->
-    <script src="./assets/js/jquery.scrollUp.min.js"></script>
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/jquery.sticky.js"></script>
+				<section id="javascript">
+					<h2 class="title">Javascript Files and Structure</h2>
 
-    <!-- contact js -->
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/jquery.form.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/mail-script.js"></script>
-    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+					<p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
 
-    <!-- Jquery Plugins, main Jquery -->
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
+						<pre class="brush: html">
+                  <!--
+                  JavaScripts
+                  ========================== -->
+				  
+				<!-- All JS Custom Plugins Link Here here -->
+				<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+				<!-- Jquery, Popper, Bootstrap -->
+				<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+				<script src="./assets/js/popper.min.js"></script>
+				<script src="./assets/js/bootstrap.min.js"></script>
+				<!-- Jquery Mobile Menu -->
+				<script src="./assets/js/jquery.slicknav.min.js"></script>
 
-</body>
+				<!-- Jquery Slick , Owl-Carousel Plugins -->
+				<script src="./assets/js/owl.carousel.min.js"></script>
+				<script src="./assets/js/slick.min.js"></script>
+				<!-- Date Picker -->
+				<script src="./assets/js/gijgo.min.js"></script>
+				<!-- One Page, Animated-HeadLin -->
+				<script src="./assets/js/wow.min.js"></script>
+				<script src="./assets/js/animated.headline.js"></script>
+				<script src="./assets/js/jquery.magnific-popup.js"></script>
 
-</html>
+				<!-- Breaking New Pluging -->
+				<script src="./assets/js/jquery.ticker.js"></script>
+				<script src="./assets/js/site.js"></script>
+
+				<!-- Scrollup, nice-select, sticky -->
+				<script src="./assets/js/jquery.scrollUp.min.js"></script>
+				<script src="./assets/js/jquery.nice-select.min.js"></script>
+				<script src="./assets/js/jquery.sticky.js"></script>
+				
+				<!-- contact js -->
+				<script src="./assets/js/contact.js"></script>
+				<script src="./assets/js/jquery.form.js"></script>
+				<script src="./assets/js/jquery.validate.min.js"></script>
+				<script src="./assets/js/mail-script.js"></script>
+				<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+				
+				<!-- Jquery Plugins, main Jquery -->	
+				<script src="./assets/js/plugins.js"></script>
+				<script src="./assets/js/main.js"></script>
+				
+              </pre>
+
+          </section>
+
+          <section id="contact-form">
+          	<h2 class="title"> Contact Form </h2>
+          	<p>This is a PHP Script for sending messages to your email, you should replace <strong>demo@site.com</strong> to your email to start receive messages.</p>
+          	<pre class="brush:php">
+          		$to = 'demo@site.com'; // replace this mail with yours
+          		$firstname = $_POST["fname"];
+          		$email= $_POST["email"];
+          		$headers = 'MIME-Version: 1.0' . "\r\n";
+          		$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+          		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+          		$message ='<table style="width:100%">
+          			<tr>
+          				<td>'.$firstname.'  '.$laststname.'</td>
+          			</tr>
+          			<tr><td>Email: '.$email.'</td></tr>
+          		</table>';
+
+          		if (@mail($to, $email, $message, $headers))
+          		{
+          			echo 'The message has been sent.';
+          		}else{
+          		echo 'failed';
+          	}
+          </pre>		            
+      </section>
+      <section id="subscription-form">
+      	<h2 class="title"> Subscription Form </h2>
+      	<p>Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".</p>
+      	<pre class="brush: javascript">
+      		<div id="mc_embed_signup">
+      			//Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
+      			<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center"></form>
+      		</div>
+      	</pre>		            
+      </section>
+      <section id="video">
+      	<h2 class="title"> Video Tutorial </h2>
+      	<!-- 21:9 aspect ratio -->
+      	<div class="embed-responsive embed-responsive-21by9">
+      		<iframe class="embed-responsive-item" width="100%" height="515" src="https://www.youtube.com/embed/i7_PRPLOxVE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      	</div>	            
+      </section>
+      <section id="credit">
+      	<h2 class="title">Source and Credit</h2>		            
+      	<div class="script-source">
+      		<ul>
+      			<li><a target="_blank" href="http://www.pexels.com">Pexels</a></li>
+      			<li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+      			<li><a target="_blank" href="http://getbootstrap.com">Bootstrap Framework</a></li>
+      			<li><a target="_blank" href="https://dimsemenov.com/plugins/magnific-popup/">magnific popup</a></li>
+      			<li><a target="_blank" href="https://masonry.desandro.com/">masonry</a></li>
+      			<li><a target="_blank" href="https://www.flaticon.com/home">flaticon</a></li>
+      			<li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+      			<li><a target="_blank" href="https://github.com/iamMonzurul/jQuery-AJAX-MailChimp">Ajax Mailchimp</a></li>
+      			<li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+      			<li><a target="_blank" href="https://themify.me/themify-icons">Themify Icons</a></li>
+
+      		</ul>
+      	</div>
+      </section>
+  </div>
+</div>
+
+
+		<!-- Essential JavaScript Libraries
+			==============================================-->
+			<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="js/jquery.nav.js"></script>
+			<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+			<script type="text/javascript">
+				SyntaxHighlighter.all()
+			</script>
+			<script type="text/javascript" src="js/custom.js"></script>
+
+		</body>
+		</html>
